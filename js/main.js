@@ -14,7 +14,7 @@ for (let i = 1; i <= 100; i++) {
 
     document.getElementById("cardContainer").innerHTML += `
         <div class="square ${color}">
-            <p class="text-center fs-5 fw-3 vertical-align-square">${textMultiples}</p>
+            <p class="text-center fs-5 fw-3 vertical-align-square shadow">${textMultiples}</p>
         </div>
     `;
 
