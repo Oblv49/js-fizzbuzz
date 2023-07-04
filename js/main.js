@@ -2,6 +2,7 @@
 for (let i = 1; i <= 100; i++) {
 
     let color = "bg_blueForCard";
+    let textMultiples = (i % 3 == 0 && i % 5 == 0) ? "FizzBuzz" : (i % 3 == 0) ? "Fizz" : (i % 5 == 0) ? "Buzz" : i;
    
     if (i % 3 == 0 && i % 5 == 0) {
         color = "bg_red";  
@@ -13,7 +14,7 @@ for (let i = 1; i <= 100; i++) {
 
     document.getElementById("cardContainer").innerHTML += `
         <div class="square ${color}">
-            <p class="text-center text-white fs-3 fw-3 vertical-align-square">${i}</p>
+            <p class="text-center fs-5 fw-3 vertical-align-square">${textMultiples}</p>
         </div>
     `;
 
